@@ -1,0 +1,19 @@
+ h1<-read.table("data.txt")
+ print(nrow(h1))
+ print(ncol(h1))
+ print(h1)
+ print(h1[1,])
+ print(h1[2:4,,1])
+ write.table(result, "colSum.txt", row.names=FALSE, col.names=FALSE)
+ print(sum(h1))
+
+#
+ cutData<-h1[1:5,,1]
+ write.table(cutData, "cutData.txt", row.names=FALSE, col.names=FALSE)
+#
+ mat <- matrix(seq(1:9), nrow = 3, ncol = 3, byrow = TRUE)
+ matnew <- 2.5*mat[length(mat)]
+#
+ randMatrix<-matrix(rnorm(5), nrow = 5, ncol = 5, byrow = TRUE)
+ write.table(randMatrix, "randMatrix.txt", row.names=FALSE, col.names=FALSE)
+#
